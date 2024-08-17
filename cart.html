@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="css/external.css">
+    <!-- LINK FOR ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+    <!-- ***** Header Section Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        
+                        <!-- Logo Start -->
+                        <a href="Startup.html" class="logo">
+                            <img src="images/logo.png" alt="">
+                        </a>
+                        <!-- Logo End -->
+                        
+                        <!-- Navigation Menu Start -->
+                        <ul class="nav">
+                            <div id="nav_center">
+                                <li class=><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="apparel.html">Apparel</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </div>
+                            <div class="nav_icons">
+                                <li><a href="cart.html" class="fas fa-shopping-cart active" style="font-size: 2em;"></a></li>
+                                <li><a href="Startup.html" class="fas fa-sign-out" style="font-weight: bolder;"> Log Out</a></li>
+                            </div>
+                        </ul>   
+                        <!-- Navigation Menu End -->
+                    </nav>
+                </div>
+            </div>
+        </div>  
+    </header>
+    <!-- ***** Header Section End ***** -->
+    
+    
+    <!-- ***** Banner Start ***** -->
+    <img src="images/banner/banner3.png" class="image_banner">
+    <!-- ***** Banner End ***** -->
+    
+    
+    <!-- ***** Body Section Start ***** -->
+    <!-- cart table-->
+    <section id="cart" class="section-p1">
+        <div class="table-container">
+            <table id="cartItemsContainer" width="100%">
+                <thead>
+                    <tr>
+                        <td>Include</td>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                    <!-- dito malalagay yung mga ma-aadd to cart -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <section id="cart-add" class="section-p1">
+        
+        <div class="payment_container">
+            <div class="title">
+                <h4>Select a <span style="color: #532FE4">Payment</span> Method</h4>
+            </div>
+            
+            <form action="#">
+                <input type="radio" name="payment" id="visa">
+                <input type="radio" name="payment" id="mastercard">
+                <input type="radio" name="payment" id="paypal">
+                <input type="radio" name="payment" id="GCash">
+                
+                
+                <div class="category">
+                    <label for="visa" class="visaMethod">
+                        <div class="imgName">
+                            <div class="imgContainer visa">
+                                <img src="https://i.ibb.co/vjQCN4y/Visa-Card.png" alt="">
+                            </div>
+                            <span class="name">VISA</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #9754F6;"></i></span>
+                    </label>
+                    
+                    <label for="mastercard" class="mastercardMethod">
+                        <div class="imgName">
+                            <div class="imgContainer mastercard">
+                                <img src="https://i.ibb.co/vdbBkgT/mastercard.jpg" alt="">
+                            </div>
+                            <span class="name">Mastercard</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #9754F6;"></i></span>
+                    </label>
+                    
+                    <label for="paypal" class="paypalMethod">
+                        <div class="imgName">
+                            <div class="imgContainer paypal">
+                                <img src="https://i.ibb.co/KVF3mr1/paypal.png" alt="">
+                            </div>
+                            <span class="name">Paypal</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #9754F6;"></i></span>
+                    </label>
+                    
+                    <label for="GCash" class="GCashMethod">
+                        <div class="imgName">
+                            <div class="imgContainer GCash">
+                                <img src="https://play-lh.googleusercontent.com/QNP0Aj2hyumAmYiWVAsJtY2LLTQnzHxdW7-DpwFUFNkPJjgRxi-BXg7A4yI6tgYKMeU" alt="">
+                            </div>
+                            <span class="name">GCash</span>
+                        </div>
+                        <span class="check"><i class="fa-solid fa-circle-check" style="color: #9754F6;"></i></span>
+                    </label>
+                </div>
+            </form>
+        </div>
+        
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td id="cart-subtotal">₱ 0.00</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td id="shipping">Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td id="total">₱ 0.00</td>
+                </tr>
+            </table>
+            <a href="checkout.html">
+                <button id="buy-now-button" class="normal">Check Out</button>
+            </a>
+        </div>
+    </section>
+    
+    <!-- deliver -->
+    <section class="deliver">
+        
+        <div class="box-container">
+            
+            <div class="box">
+                <div class="image">
+                    <img src="images//cart/deliver_1.png" alt="" class="front-img">
+                    <img src="images//cart/deliver_4.png" alt="" class="rear-img">
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="images//cart/deliver_2.png" alt="" class="front-img">
+                    <img src="images//cart/deliver_5.png" alt="" class="rear-img">
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="image">
+                    <img src="images//cart/deliver_3.png" alt="" class="front-img">
+                    <img src="images//cart/deliver_6.png" alt="" class="rear-img">
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="content">
+                    <h2>Thankyou for Shopping With Us</h2>
+                    <p>Please do support and comeback with us anytime.</p>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <!-- ***** Body Section End ***** -->
+    
+    
+    <!-- ***** Footer Section Start ***** -->
+    <section class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <h3>About Us</h3>
+                <p><strong>Hours:</strong> 10:00 AM - 6:00 PM , Mon - Sat</p>
+                <p><a href="FAQ.html">FAQ</a></p>
+                <p>Copyrights &copy; 2023 All rights reserved By BSCS-2A</p>
+            </div>
+            
+            <div class="footer-box">
+                <h3>Newsletter</h3>
+                <p>Stay updated with us</p>
+                <form>
+                    <input type="email" name="email" placeholder="@gmail.com" autocomplete="email">
+                    <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+                </form>
+            </div>
+            
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p><strong>Address: </strong> Pasig City, Philippines</p>
+                <p><strong>Phone:</strong> (02) 7933 2457 / (+63) 917 758 9353</p>
+                <p><strong>Email:</strong> teevibes@gmail.com</p>
+                <p>Connect With Us On:</p>
+                <div>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Footer Section End ***** -->
+    
+    
+    <script>
+        // Function to format the number with comma separator for thousands
+        function formatNumberWithCommas(number) {
+            return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }
+        
+        // Function to update the cart totals
+        function updateCartTotals() {
+            var cartItems = localStorage.getItem("cartItems");
+            var cartItemsArray = cartItems ? JSON.parse(cartItems) : [];
+            
+            var cartSubtotal = 0;
+            
+            // Calculating the subtotal of the cart
+            cartItemsArray.forEach(function (item) {
+                if (item.include) { // Only include checked items
+                    cartSubtotal += item.price * item.quantity;
+                }
+            });
+            
+            // Initialize shipping variable
+            var shipping = ""; 
+            // Calculate the shipping fee based on the cart subtotal
+            if (cartSubtotal === 0) {
+                shipping = "₱0.00";
+            } else if (cartSubtotal >= 1000) {
+                shipping = "Free";
+            } else {
+                // Calculate shipping fee for cart subtotals below 1000
+                if (cartSubtotal < 500) {
+                    shipping = "₱80.00";
+                } else if (cartSubtotal >= 500 && cartSubtotal <= 999) {
+                    shipping = "₱50.00";
+                }
+            }
+            
+            // Initialize total variable
+            var total = cartSubtotal; 
+            if (shipping === "Free") {
+                total = cartSubtotal;
+            } else {
+                total = cartSubtotal + parseFloat(shipping.slice(2));
+            }
+            
+            // Updating cart totals
+            var cartSubtotalElement = document.getElementById("cart-subtotal");
+            var shippingElement = document.getElementById("shipping");
+            var totalElement = document.getElementById("total");
+            
+            cartSubtotalElement.textContent = "₱" + formatNumberWithCommas(cartSubtotal.toFixed(2));
+            shippingElement.textContent = shipping;
+            totalElement.textContent = "₱" + formatNumberWithCommas(total.toFixed(2));
+        }
+        
+        // Function to update the quantity of an item in the cart
+        function updateQuantity(index, quantity) {
+            var cartItems = localStorage.getItem("cartItems");
+            var cartItemsArray = cartItems ? JSON.parse(cartItems) : [];
+            if (index >= 0 && index < cartItemsArray.length) {
+                cartItemsArray[index].quantity = quantity;
+                localStorage.setItem("cartItems", JSON.stringify(cartItemsArray));
+                updateCartTotals();
+            }
+        }
+        
+        // Function to display the cart items
+        function displayCartItems() {
+            var existingCartItems = localStorage.getItem("cartItems");
+            var cartItems = existingCartItems ? JSON.parse(existingCartItems) : [];
+            var cartItemsContainer = document.getElementById("cartItemsContainer");
+            var cartItemsBody = cartItemsContainer.querySelector("tbody");
+            
+            // Clearing cart items body before adding new items
+            cartItemsBody.innerHTML = "";
+            
+            // Iteration ng table row para sa mga items na ilalagay sa table 
+            cartItems.forEach(function (item, index) {
+                var cartItemRow = document.createElement("tr");
+                cartItemRow.innerHTML = `
+                <td><input type="checkbox" name="include" data-index="${index}" ${item.include ? 'checked' : ''}></td>
+                <td><button class="remove-btn" data-index="${index}"><i class="fas fa-trash"></i></button></td>
+                <td><img src="${item.image}" alt="${item.name}" width="80"></td>
+                <td>${item.name}</td>
+                <td>₱${formatNumberWithCommas(item.price.toFixed(2))}</td>
+                <td><input type="number" name="input" value="${item.quantity}" data-index="${index}" class="quantity-input"></td>
+                <td>₱${formatNumberWithCommas((item.price * item.quantity).toFixed(2))}</td>
+                `;
+                
+                cartItemsBody.appendChild(cartItemRow);
+            });
+            
+            // Adding event listeners to the remove buttons
+            var removeButtons = document.querySelectorAll(".remove-btn");
+            removeButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    var indexToRemove = parseInt(this.getAttribute("data-index"));
+                    cartItems.splice(indexToRemove, 1);
+                    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                    displayCartItems();
+                    updateCartTotals();
+                });
+            });
+            
+            // Adding event listeners to the quantity inputs
+            var quantityInputs = document.querySelectorAll(".quantity-input");
+            quantityInputs.forEach(function (input) {
+                input.addEventListener("input", function () {
+                    var index = parseInt(this.getAttribute("data-index"));
+                    var quantity = parseInt(this.value);
+                    
+                    if (isNaN(quantity) || quantity <= 0) {
+                        quantity = 1;
+                        this.value = quantity;
+                    }
+                    
+                    var subtotal = quantity * cartItems[index].price;
+                    cartItems[index].quantity = quantity;
+                    this.parentNode.nextElementSibling.textContent = "₱" + formatNumberWithCommas(subtotal.toFixed(2));
+                    
+                    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                    updateCartTotals();
+                });
+            });
+            
+            // Adding event listeners to the include checkboxes
+            var includeCheckboxes = document.querySelectorAll("[name='include']");
+            includeCheckboxes.forEach(function (checkbox) {
+                checkbox.addEventListener("change", function () {
+                    var index = parseInt(this.getAttribute("data-index"));
+                    cartItems[index].include = this.checked;
+                    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+                    updateCartTotals();
+                });
+            });
+            updateCartTotals();
+        }
+        
+        // Displaying the cart items
+        displayCartItems();
+        
+        
+        // Check Out button click event
+        var buyNowButton = document.getElementById("buy-now-button");
+        buyNowButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            
+            // Checking if any items are selected
+            var includeCheckboxes = document.querySelectorAll("[name='include']");
+            var isAnyItemSelected = Array.from(includeCheckboxes).some(function (checkbox) {
+                return checkbox.checked;
+            });
+            
+            if (!isAnyItemSelected) {
+                alert("Please select an item first!"); 
+                return; 
+            }
+            
+            // Checking if the cart is empty
+            var cartItems = localStorage.getItem("cartItems");
+            var cartItemsArray = cartItems ? JSON.parse(cartItems) : [];
+            
+            if (cartItemsArray.length === 0) {
+                alert("Your cart is empty!"); 
+                return; 
+            }
+            
+            // validation for payment method
+            var paymentMethods = document.querySelectorAll("[name='payment']");
+            var isPaymentMethodSelected = Array.from(paymentMethods).some(function (method) {
+                return method.checked;
+            });
+            
+            if (!isPaymentMethodSelected) {
+                alert("Please select a Payment Method"); 
+                return; 
+            }
+            
+            // Going to checkout page
+            var selectedPaymentMethod = document.querySelector("[name='payment']:checked");
+            localStorage.setItem("selectedPaymentMethod", selectedPaymentMethod ? selectedPaymentMethod.id : "");
+            
+            window.location.href = "checkout.html";
+        });
+    </script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

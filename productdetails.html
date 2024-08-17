@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Detail</title>
+  <link rel="stylesheet" href="css/external.css">
+  <!-- LINK FOR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+  <!-- ***** Header Section Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            
+            <!-- Logo Start -->
+            <a href="Startup.html" class="logo">
+              <img src="images/logo.png" alt="">
+            </a>
+            <!-- Logo End -->
+            
+            <!-- Navigation Menu Start -->
+            <ul class="nav">
+              <div id="nav_center">
+                <li class=><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="apparel.html" class="active">Apparel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </div>
+              <div class="nav_icons">
+                <li><a href="cart.html" class="fas fa-shopping-cart" style="font-size: 2em;"></a></li>
+                <li><a href="Startup.html" class="fas fa-sign-out" style="font-weight: bolder;"> Log Out</a></li>
+              </div>
+            </ul>   
+            <!-- Navigation Menu End -->
+          </nav>
+        </div>
+      </div>
+    </div>  
+  </header>
+  <!-- ***** Header Section End ***** -->
+  
+  <!-- ***** Banner Start ***** -->
+  <img src="images/banner/banner2.png" class="image_banner">
+  <!-- ***** Banner End ***** -->
+  
+  
+  <!-- ***** Body Section Start ***** -->
+  <!-- Product Images -->
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+      <img src="images/products/p" width="100%" height="65%" id="MainImg" alt="">
+      
+      <div class="small-img-group">
+        <!-- 1ST IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f2.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <!-- 2ND IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f1.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <!-- 3RD IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f1.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <!-- 4TH IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f1.jpg" width="100%" class="small-img" alt="">
+        </div>
+      </div> 
+    </div>
+    
+    <!-- Product Details  -->
+    <div class="single-pro-details">
+      <!-- product name -->
+      <h2></h2>
+      <!-- Product Price -->
+      <h4></h4>
+      
+      <div class="input-select-container">
+        <select id="size">
+          <option>Select Size</option>
+          <option>Extra Small (XS)</option>
+          <option>Small (S)</option>
+          <option>Medium (M)</option>
+          <option>Large (L)</option>
+          <option>Extra Large (XL)</option>
+        </select>
+        
+        <input type="number" id="quantityInput" value="1">
+      </div>
+      
+      <h3>Product Description</h3>
+      <!-- Product description -->
+      <p></p>
+      
+      <div class="product-detail">
+        <ul>
+          <li>Available: <span>in stock</span></li>
+          <li>Originality: <span>100% Authentic</span></li>
+          <li>Shipping Area: <span>All over the world</span></li>
+          <li>Shipping Fee: <span>₱80.00 for ₱0.00 Spend || ₱50.00 for ₱500.00 Spend || Free for ₱1,000.00 Spend</span></li>
+        </ul>
+        <button id="addToCartButton" class="normal">Add To Cart</button>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Body Section End ***** -->
+  
+  
+  <!-- ***** Footer Section Start ***** -->
+  <section class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <h3>About Us</h3>
+        <p><strong>Hours:</strong> 10:00 AM - 6:00 PM , Mon - Sat</p>
+        <p><a href="FAQ.html">FAQ</a></p>
+        <p>Copyrights &copy; 2023 All rights reserved By BSCS-2A</p>
+      </div>
+      
+      <div class="footer-box">
+        <h3>Newsletter</h3>
+        <p>Stay updated with us</p>
+        <form>
+          <input type="email" name="email" placeholder="@gmail.com" autocomplete="email">
+          <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+        </form>
+      </div>
+      
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p><strong>Address: </strong> Pasig City, Philippines</p>
+        <p><strong>Phone:</strong> (02) 7933 2457 / (+63) 917 758 9353</p>
+        <p><strong>Email:</strong> teevibes@gmail.com</p>
+        <p>Connect With Us On:</p>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- ***** Footer Section End ***** -->
+  
+  
+  <script>
+    //   Product Details
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
+    
+    // URL of small images
+    var smallImageUrls = {
+      "p-1-1.jpg": {
+        "first": "images/products/p-1-1.jpg",
+        "second": "images/products/p-1-2.jpg",
+        "third": "images/products/p-1-3.jpg",
+        "fourth": "images/products/p-1-4.jpg"
+      },
+      "p-2-1.jpg": {
+        "first": "images/products/p-2-1.jpg",
+        "second": "images/products/p-2-2.jpg",
+        "third": "images/products/p-2-3.jpg",
+        "fourth": "images/products/p-2-4.jpg"
+      },
+      "p-3-1.jpg": {
+        "first": "images/products/p-3-1.jpg",
+        "second": "images/products/p-3-2.jpg",
+        "third": "images/products/p-3-3.jpg",
+        "fourth": "images/products/p-3-4.jpg"
+      },
+      "p-4-1.jpg": {
+        "first": "images/products/p-4-1.jpg",
+        "second": "images/products/p-4-2.jpg",
+        "third": "images/products/p-4-3.jpg",
+        "fourth": "images/products/p-4-4.jpg"
+      },
+      "p-5-1.jpg": {
+        "first": "images/products/p-5-1.jpg",
+        "second": "images/products/p-5-2.jpg",
+        "third": "images/products/p-5-3.jpg",
+        "fourth": "images/products/p-5-4.jpg"
+      },
+      "p-6-1.jpg": {
+        "first": "images/products/p-6-1.jpg",
+        "second": "images/products/p-6-2.jpg",
+        "third": "images/products/p-6-3.jpg",
+        "fourth": "images/products/p-6-4.jpg"
+      },
+      "p-7-1.jpg": {
+        "first": "images/products/p-7-1.jpg",
+        "second": "images/products/p-7-2.jpg",
+        "third": "images/products/p-7-3.jpg",
+        "fourth": "images/products/p-7-4.jpg"
+      },
+      "p-8-1.jpg": {
+        "first": "images/products/p-8-1.jpg",
+        "second": "images/products/p-8-2.jpg",
+        "third": "images/products/p-8-3.jpg",
+        "fourth": "images/products/p-8-4.jpg"
+      },
+      "p-9-1.jpg": {
+        "first": "images/products/p-9-1.jpg",
+        "second": "images/products/p-9-2.jpg",
+        "third": "images/products/p-9-3.jpg"
+      },
+      "p-10-1.jpg": {
+        "first": "images/products/p-10-1.jpg",
+      },
+      "p-11-1.jpg": {
+        "first": "images/products/p-11-1.jpg",
+        "second": "images/products/p-11-2.jpg",
+        "third": "images/products/p-11-3.jpg",
+        "fourths": "images/products/p-11-4.jpg"
+      },
+      "p-12-1.jpg": {
+        "first": "images/products/p-12-1.jpg",
+        "second": "images/products/p-12-2.jpg",
+        "third": "images/products/p-12-3.jpg"
+      },
+      "p-13-1.jpg": {
+        "first": "images/products/p-13-1.jpg",
+        "second": "images/products/p-13-2.jpg",
+        "third": "images/products/p-13-3.jpg",
+        "fourth": "images/products/p-13-4.jpg"
+      },
+      "p-14-1.jpg": {
+        "first": "images/products/p-14-1.jpg",
+        "second": "images/products/p-14-2.jpg",
+        "third": "images/products/p-14-3.jpg",
+        "fourth": "images/products/p-14-4.jpg"
+      },
+      "p-15-1.jpg": {
+        "first": "images/products/p-15-1.jpg",
+        "second": "images/products/p-15-2.jpg",
+        "third": "images/products/p-15-3.jpg",
+        "fourth": "images/products/p-15-4.jpg"
+      },
+      "p-16-1.jpg": {
+        "first": "images/products/p-16-1.jpg",
+        "second": "images/products/p-16-2.jpg",
+        "third": "images/products/p-16-3.jpg",
+        "fourth": "images/products/p-16-4.jpg"
+      },
+      "p-17-1.jpg": {
+        "first": "images/products/p-17-1.jpg",
+        "second": "images/products/p-17-2.jpg",
+        "third": "images/products/p-17-3.jpg"
+      },
+      "p-18-1.jpg": {
+        "first": "images/products/p-18-1.jpg",
+        "second": "images/products/p-18-2.jpg",
+        "third": "images/products/p-18-3.jpg",
+        "fourth": "images/products/p-18-4.jpg"
+      },
+      "p-19-1.jpg": {
+        "first": "images/products/p-19-1.jpg",
+        "second": "images/products/p-19-2.jpg",
+        "third": "images/products/p-19-3.jpg",
+        "fourth": "images/products/p-19-4.jpg"
+      },
+      "p-20-1.jpg": {
+        "first": "images/products/p-20-1.jpg",
+        "second": "images/products/p-20-2.jpg",
+        "third": "images/products/p-20-3.jpg",
+        "fourth": "images/products/p-20-4.jpg"
+      },
+    };
+    
+    // Getting URL parameter
+    var urlParams = new URLSearchParams(window.location.search);
+    var imgParam = urlParams.get('img');
+    var nameParam = decodeURIComponent(urlParams.get('name'));
+    var priceParam = decodeURIComponent(urlParams.get('price'));
+    var descriptionParam = decodeURIComponent(urlParams.get('description'));
+    
+    // Updating images source and product details based on URL parameter
+    document.querySelector("#MainImg").src = "images/products/" + imgParam;
+    document.querySelector("#prodetails h2").textContent = nameParam;
+    document.querySelector("#prodetails h4").textContent = priceParam;
+    document.querySelector("#prodetails p").textContent = descriptionParam;
+    
+    // Image Format
+    var productName = imgParam.replace(".jpg", "");
+    
+    // Updating small images based on product name
+    for (var i = 0; i < smallimg.length; i++) {
+      var smallImgUrls = smallImageUrls[productName + ".jpg"];
+      var smallImgUrl = smallImgUrls[Object.keys(smallImgUrls)[i]];
+      smallimg[i].src = smallImgUrl;
+      smallimg[i].setAttribute("data-img", smallImgUrl); 
+    }
+    
+    // Event listener for the small images
+    for (var i = 0; i < smallimg.length; i++) {
+      smallimg[i].onclick = function() {
+        MainImg.src = this.getAttribute("data-img"); 
+      }
+    }
+    
+    // Add to cart in product details
+    function addToCart() {
+      var addToCartButton = document.getElementById("addToCartButton");
+      var quantityInput = document.querySelector("#quantityInput");
+      var sizeSelect = document.getElementById("size");
+      var productPrice = parseFloat(document.querySelector("#prodetails h4").textContent.replace(/,/g, "").replace("₱", ""));
+      
+      addToCartButton.addEventListener("click", function() {
+        var productName = document.querySelector("#prodetails h2").textContent;
+        var productImageSrc = document.querySelector("#MainImg").src;
+        var quantity = parseInt(quantityInput.value);
+        var selectedSize = sizeSelect.value;
+        
+        if (selectedSize === "Select Size") {
+          alert("Please choose a size first.");
+          return; 
+        }
+        
+        var cartItem = {
+          name: productName,
+          price: productPrice,
+          quantity: quantity,
+          size: selectedSize,
+          image: productImageSrc
+        };
+        
+        
+        var existingCartItems = localStorage.getItem("cartItems");
+        var cartItems = existingCartItems ? JSON.parse(existingCartItems) : [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        
+        alert("The product has been added to the cart.");
+        updateCartTotals(); 
+      });
+      
+      quantityInput.addEventListener("input", function() {
+        var quantity = parseInt(quantityInput.value);
+        var subtotal = quantity * productPrice;
+        document.querySelector("#subtotal").textContent = "₱" + subtotal.toFixed(2);
+      });
+      
+      quantityInput.addEventListener("change", function() {
+        var quantity = parseInt(quantityInput.value);
+        
+        console.log("Updated quantity:", quantity);
+      });
+    }
+    
+    // Calling addToCart function
+    addToCart();
+  </script>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

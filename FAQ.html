@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/external.css">
+  <!-- LINK FOR ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+  <!-- ***** Header Section Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            
+            <!-- Logo Start -->
+            <a href="Startup.html" class="logo">
+              <img src="images/logo.png" alt="">
+            </a>
+            <!-- Logo End -->
+            
+            <!-- Navigation Menu Start -->
+            <ul class="nav">
+              <div id="nav_center">
+                <li class=><a href="home.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="apparel.html">Apparel</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </div>
+              <div class="nav_icons">
+                <li><a href="cart.html" class="fas fa-shopping-cart" style="font-size: 2em;"></a></li>
+                <li><a href="Startup.html" class="fas fa-sign-out" style="font-weight: bolder;"> Log Out</a></li>
+              </div>
+            </ul>   
+            <!-- Navigation Menu End -->
+          </nav>
+        </div>
+      </div>
+    </div>  
+  </header>
+  <!-- ***** Header Section End ***** -->
+  
+  
+  <!-- ***** Body Section Start ***** -->
+  <div class="FAQ_container">
+    <h1>Frequently Asked Questions</h1>
+    <ul class="faq-list">
+      <li>
+        <div class="question">What are the ways to pay my orders?</div>
+        <div class="answer">
+          <span>Tee vibes accept Debit/Credit cards and also partners with Gcash and PayPal.</span>
+        </div>
+      </li>
+      <li>
+        <div class="question">How many days does it take for the items to be delivered?</div>
+        <div class="answer">
+          <span>NCR (1 day)</span><br>
+          <span>Luzon (2 - 3 days)</span><br>
+          <span>Visayas (3 - 4 days)</span><br>
+          <span>Mindanao (5 - 6 days)</span>
+        </div>
+      </li>
+      <li>
+        <div class="question">Is a refund for items possible?</div>
+        <div class="answer">
+          <span>Yes, Tee Vibes offers a refund or 14 days free exchange. TeeVibes will also replace the product if there's any damage or if the size and color are wrong.</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- ***** Body Section End ***** -->
+  
+  
+  <!-- ***** Footer Section Start ***** -->
+  <section class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <h3>About Us</h3>
+        <p><strong>Hours:</strong> 10:00 AM - 6:00 PM , Mon - Sat</p>
+        <p><a href="FAQ.html">FAQ</a></p>
+        <p>Copyrights &copy; 2023 All rights reserved By BSCS-2A</p>
+      </div>
+
+      <div class="footer-box">
+        <h3>Newsletter</h3>
+        <p>Stay updated with us</p>
+        <form>
+          <input type="email" name="email" placeholder="@gmail.com" autocomplete="email">
+          <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+        </form>
+      </div>
+      
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p><strong>Address: </strong> Pasig City, Philippines</p>
+        <p><strong>Phone:</strong> (02) 7933 2457 / (+63) 917 758 9353</p>
+        <p><strong>Email:</strong> teevibes@gmail.com</p>
+        <p>Connect With Us On:</p>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Footer Section End ***** -->
+  
+  <script>
+    const faqItems = document.querySelectorAll('.faq-list li');
+    
+    faqItems.forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

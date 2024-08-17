@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tee Vibes Login</title>
+    <link rel="stylesheet" href="css/external.css">
+</head>
+<body>
+    <div class="login_video">
+        <video autoplay loop plays-inline muted class="back-video">
+            <source src="1.mp4" type="video/mp4">
+        </video>
+        
+        <div class="login_container">
+            <img src="images/logo.png" alt="">
+            <h1>Experience the Vibes with our Tees</h1>
+            <form id="loginForm" onsubmit="return validateForm(event)">
+                <input type="text" id="username" placeholder="Username" required>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <input type="checkbox" id="showPassword" onchange="togglePasswordVisibility()">
+                    <label for="showPassword">Show Password</label>
+                </div>
+                <button type="submit">Login</button>
+                <p id="errorMsg" class="error-msg"></p>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            
+            // Getting input values from user
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+            
+            // validation for username and password
+            if (username === 'admin' && password === 'password') {
+                window.location.href = 'home.html';
+            } else if (username === 'tajarrosr' && password === '123456') {
+                window.location.href = 'home.html';
+            } else {
+                document.getElementById('errorMsg').textContent = 'Invalid username or password';
+            }
+        } 
+
+        // Function to Showing Password
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById('password');
+            var showPasswordCheckbox = document.getElementById('showPassword');
+            
+            if (showPasswordCheckbox.checked) {
+                passwordInput.type = 'text';
+            } else {
+                passwordInput.type = 'password';
+            }
+        }
+    </script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

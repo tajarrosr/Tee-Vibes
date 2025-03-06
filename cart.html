@@ -230,7 +230,6 @@
     
     
     <script>
-        // Function to format the number with comma separator for thousands
         function formatNumberWithCommas(number) {
             return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
         }
@@ -244,20 +243,17 @@
             
             // Calculating the subtotal of the cart
             cartItemsArray.forEach(function (item) {
-                if (item.include) { // Only include checked items
+                if (item.include) { 
                     cartSubtotal += item.price * item.quantity;
                 }
             });
             
-            // Initialize shipping variable
             var shipping = ""; 
-            // Calculate the shipping fee based on the cart subtotal
             if (cartSubtotal === 0) {
                 shipping = "₱0.00";
             } else if (cartSubtotal >= 1000) {
                 shipping = "Free";
             } else {
-                // Calculate shipping fee for cart subtotals below 1000
                 if (cartSubtotal < 500) {
                     shipping = "₱80.00";
                 } else if (cartSubtotal >= 500 && cartSubtotal <= 999) {
@@ -265,7 +261,6 @@
                 }
             }
             
-            // Initialize total variable
             var total = cartSubtotal; 
             if (shipping === "Free") {
                 total = cartSubtotal;
@@ -273,7 +268,6 @@
                 total = cartSubtotal + parseFloat(shipping.slice(2));
             }
             
-            // Updating cart totals
             var cartSubtotalElement = document.getElementById("cart-subtotal");
             var shippingElement = document.getElementById("shipping");
             var totalElement = document.getElementById("total");
@@ -283,7 +277,6 @@
             totalElement.textContent = "₱" + formatNumberWithCommas(total.toFixed(2));
         }
         
-        // Function to update the quantity of an item in the cart
         function updateQuantity(index, quantity) {
             var cartItems = localStorage.getItem("cartItems");
             var cartItemsArray = cartItems ? JSON.parse(cartItems) : [];
@@ -294,7 +287,6 @@
             }
         }
         
-        // Function to display the cart items
         function displayCartItems() {
             var existingCartItems = localStorage.getItem("cartItems");
             var cartItems = existingCartItems ? JSON.parse(existingCartItems) : [];
@@ -304,7 +296,7 @@
             // Clearing cart items body before adding new items
             cartItemsBody.innerHTML = "";
             
-            // Iteration ng table row para sa mga items na ilalagay sa table 
+            // Iteration ng table row for the items to put on the table
             cartItems.forEach(function (item, index) {
                 var cartItemRow = document.createElement("tr");
                 cartItemRow.innerHTML = `
@@ -320,7 +312,6 @@
                 cartItemsBody.appendChild(cartItemRow);
             });
             
-            // Adding event listeners to the remove buttons
             var removeButtons = document.querySelectorAll(".remove-btn");
             removeButtons.forEach(function (button) {
                 button.addEventListener("click", function () {
@@ -332,7 +323,6 @@
                 });
             });
             
-            // Adding event listeners to the quantity inputs
             var quantityInputs = document.querySelectorAll(".quantity-input");
             quantityInputs.forEach(function (input) {
                 input.addEventListener("input", function () {
@@ -353,7 +343,6 @@
                 });
             });
             
-            // Adding event listeners to the include checkboxes
             var includeCheckboxes = document.querySelectorAll("[name='include']");
             includeCheckboxes.forEach(function (checkbox) {
                 checkbox.addEventListener("change", function () {
@@ -370,7 +359,6 @@
         displayCartItems();
         
         
-        // Check Out button click event
         var buyNowButton = document.getElementById("buy-now-button");
         buyNowButton.addEventListener("click", function (event) {
             event.preventDefault();

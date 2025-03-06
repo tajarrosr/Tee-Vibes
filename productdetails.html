@@ -156,7 +156,6 @@
     var MainImg = document.getElementById("MainImg");
     var smallimg = document.getElementsByClassName("small-img");
     
-    // URL of small images
     var smallImageUrls = {
       "p-1-1.jpg": {
         "first": "images/products/p-1-1.jpg",
@@ -274,20 +273,17 @@
       },
     };
     
-    // Getting URL parameter
     var urlParams = new URLSearchParams(window.location.search);
     var imgParam = urlParams.get('img');
     var nameParam = decodeURIComponent(urlParams.get('name'));
     var priceParam = decodeURIComponent(urlParams.get('price'));
     var descriptionParam = decodeURIComponent(urlParams.get('description'));
     
-    // Updating images source and product details based on URL parameter
     document.querySelector("#MainImg").src = "images/products/" + imgParam;
     document.querySelector("#prodetails h2").textContent = nameParam;
     document.querySelector("#prodetails h4").textContent = priceParam;
     document.querySelector("#prodetails p").textContent = descriptionParam;
     
-    // Image Format
     var productName = imgParam.replace(".jpg", "");
     
     // Updating small images based on product name
@@ -298,7 +294,6 @@
       smallimg[i].setAttribute("data-img", smallImgUrl); 
     }
     
-    // Event listener for the small images
     for (var i = 0; i < smallimg.length; i++) {
       smallimg[i].onclick = function() {
         MainImg.src = this.getAttribute("data-img"); 
@@ -354,7 +349,6 @@
       });
     }
     
-    // Calling addToCart function
     addToCart();
   </script>
   

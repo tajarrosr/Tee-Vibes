@@ -1,18 +1,24 @@
-# E-commerce Website (Frontend Only)
+# 🛒 E-commerce Website (Frontend Only)
 
-## Project Overview
-This simple e-commerce website was created using **HTML**, **CSS**, and **Vanilla JavaScript**. It's a **final project** for our **Web Design** subject in **2nd year, 2nd semester**. The project focuses purely on frontend development with no backend functionality.
+## 📖 Project Overview
+This is a **simple e-commerce website** built using **HTML**, **CSS**, and **Vanilla JavaScript**. It was created as a **final project** for our **Web Design** subject in **2nd year, 2nd semester**. The primary focus of the project is on **frontend development**, with **no backend functionality**.
 
-## Technologies Used
-- **HTML** for the structure
-- **CSS** for styling
-- **Vanilla JavaScript** for interactivity
-- **No backend functionality**
+While the website serves its purpose for educational use, **backend integration** and **responsive design** are still to be added in future versions.
 
-## Installation Instructions
-To run the website locally:
-1. Clone or download the repository:
+---
+
+## ⚙️ Technologies Used
+The project is built using the following technologies:
+- **HTML**: For the structure and layout of the website.
+- **CSS**: For styling the website, making it visually appealing.
+- **JavaScript**: For basic interactivity (e.g., handling product interactions).
+- **No backend functionality**: The website doesn't have any server-side or database connections.
+
+---
+
+## 🖥️ Installation Instructions
+To run the website locally, follow these steps:
+
+1. **Clone the repository**:
    ```bash
    git clone https://github.com/tajarrosr/Tee-Vibes.git
-
-   Important Note: This website is not responsive and is designed to be viewed on desktop or laptop screens. It may look broken or unattractive on smaller screens such as mobile phones or tablets. For the best experience, please view the site on a larger screen.

@@ -14,3 +14,5 @@ To run the website locally:
 1. Clone or download the repository:
    ```bash
    git clone https://github.com/tajarrosr/Tee-Vibes.git
+
+   Important Note: This website is not responsive and is designed to be viewed on desktop or laptop screens. It may look broken or unattractive on smaller screens such as mobile phones or tablets. For the best experience, please view the site on a larger screen.

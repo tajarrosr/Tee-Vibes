@@ -32,6 +32,4 @@ To run the website locally, follow these steps:
    git clone https://github.com/tajarrosr/Tee-Vibes.git
 
 ## 🌐 Live Demo
-Check out the live demo of the website: 
-<a href="https://tee-vibes.vercel.app/" target="_blank">Live Demo</a>
-
+Check out the live demo of the website: [Live Demo](https://tee-vibes.vercel.app/)

@@ -30,3 +30,7 @@ To run the website locally, follow these steps:
 2. **Clone the repository**:
    ```bash
    git clone https://github.com/tajarrosr/Tee-Vibes.git
+
+## 🌐 Live Demo
+Check out the live demo of the website: [Live Demo](https://tee-vibes.vercel.app/)
+

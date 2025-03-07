@@ -19,6 +19,14 @@ The project is built using the following technologies:
 ## 🖥️ Installation Instructions
 To run the website locally, follow these steps:
 
-1. **Clone the repository**:
+1. **Navigate to the directory where you want to clone the repository**:
+   - You can choose any folder on your local system. For example, you can use the `Documents` or `Desktop` folder. Use the **File Explorer** or terminal to navigate to the desired folder.
+   - For example, in your terminal, you might run:
+     ```bash
+     cd path/to/your/folder
+     ```
+     (replace `path/to/your/folder` with the actual folder path where you want the project to be stored)
+
+2. **Clone the repository**:
    ```bash
    git clone https://github.com/tajarrosr/Tee-Vibes.git

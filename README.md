@@ -13,4 +13,4 @@ This simple e-commerce website was created using **HTML**, **CSS**, and **Vanill
 To run the website locally:
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/yourusername/repository-name.git
+   git clone https://github.com/tajarrosr/Tee-Vibes.git

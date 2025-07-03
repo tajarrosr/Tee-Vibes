@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apparel Page 2</title>
+  <title>Product Detail</title>
   <link rel="icon" type="image/png" href="images/logo_icon.png" />
-  <link rel="stylesheet" href="css/external.css">
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/pages.css" />
   <!-- LINK FOR ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
@@ -37,6 +41,12 @@
                 <li><a href="cart.html" class="fas fa-shopping-cart" style="font-size: 2em;"></a></li>
               </div>
             </ul>   
+            <!-- Hamburger Menu -->
+            <div class="hamburger-menu" id="hamburger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
             <!-- Navigation Menu End -->
           </nav>
         </div>
@@ -45,218 +55,313 @@
   </header>
   <!-- ***** Header Section End ***** -->
   
-  
   <!-- ***** Banner Start ***** -->
   <img src="images/banner/banner2.png" class="image_banner">
   <!-- ***** Banner End ***** -->
   
   
-  <!-- ***** Body Section Start ***** --
-    <!-- products display-->
-    <section id="product1" class="section-p1">
-      <div class="pro-container">
-        <div class="pro">
-          <img src="images/products/p-13-1.jpg" alt="" onclick="redirectToProduct('p-13-1.jpg', 'Unisex PrimeSport Jersey Shirt', '₱500.00',  
-          'Introducing our Unisex PrimeSport Jersey Shirt, the perfect blend of style and performance. This versatile jersey shirt is designed to keep you comfortable and stylish during any activity. Crafted with high-quality materials, it offers a durable and breathable fit. With its unisex design, it\'s suitable for both men and women, providing a sleek and sporty look. Upgrade your wardrobe with the Unisex PrimeSport Jersey Shirt and experience the perfect combination of fashion and functionality.');">
-          <div class="des">
-            <h5>Unisex PrimeSport Jersey Shirt</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <h4>₱500.00</h4>
-            <button class="buy-btn" onclick="redirectToProduct('p-13-1.jpg', 'Unisex PrimeSport Jersey Shirt', '₱500.00',  
-            'Introducing our Unisex PrimeSport Jersey Shirt, the perfect blend of style and performance. This versatile jersey shirt is designed to keep you comfortable and stylish during any activity. Crafted with high-quality materials, it offers a durable and breathable fit. With its unisex design, it\'s suitable for both men and women, providing a sleek and sporty look. Upgrade your wardrobe with the Unisex PrimeSport Jersey Shirt and experience the perfect combination of fashion and functionality.');">BUY NOW</button>
-          </div>
+  <!-- ***** Body Section Start ***** -->
+  <!-- Product Images -->
+  <section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+      <img src="images/products/p" width="100%" height="65%" id="MainImg" alt="">
+      
+      <div class="small-img-group">
+        <!-- 1ST IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f2.jpg" width="100%" class="small-img" alt="">
         </div>
-
-        <div class="pro">
-            <img src="images/products/p-14-1.jpg" alt="" onclick="redirectToProduct('p-14-1.jpg', 'Zoophilist Tee Minimalist Designs For Men', '₱330.00',  
-            'Introducing the Zoophilist Tee Minimalist Designs for Men, a stylish and sophisticated addition to your wardrobe. This tee features a clean and understated design, crafted from premium cotton for ultimate comfort. The minimalist logo adds a touch of modern flair, making it a versatile choice for any occasion. Elevate your style with the Zoophilist Tee and embrace the perfect blend of comfort, quality, and aesthetics.');">
-            <div class="des">
-              <h5>Zoophilist Tee Minimalist Design For Men</h5>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h4>₱330.00</h4>
-              <button class="buy-btn" onclick="redirectToProduct('p-14-1.jpg', 'Zoophilist Tee Minimalist Designs For Men', '₱330.00',  
-              'Introducing the Zoophilist Tee Minimalist Design for Men, a stylish and sophisticated addition to your wardrobe. This tee features a clean and understated design, crafted from premium cotton for ultimate comfort. The minimalist logo adds a touch of modern flair, making it a versatile choice for any occasion. Elevate your style with the Zoophilist Tee and embrace the perfect blend of comfort, quality, and aesthetics.');">BUY NOW</button>
-            </div>
-          </div>
+        <!-- 2ND IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f1.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <!-- 3RD IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f1.jpg" width="100%" class="small-img" alt="">
+        </div>
+        <!-- 4TH IMAGE -->
+        <div class="small-img-col">
+          <img src="images/products/f1.jpg" width="100%" class="small-img" alt="">
+        </div>
+      </div> 
+    </div>
+    
+    <!-- Product Details  -->
+    <div class="single-pro-details">
+      <!-- product name -->
+      <h2></h2>
+      <!-- Product Price -->
+      <h4></h4>
+      
+      <div class="input-select-container">
+        <select id="size">
+          <option>Select Size</option>
+          <option>Extra Small (XS)</option>
+          <option>Small (S)</option>
+          <option>Medium (M)</option>
+          <option>Large (L)</option>
+          <option>Extra Large (XL)</option>
+        </select>
         
-        <div class="pro">
-          <img src="images/products/p-15-1.jpg" alt="" onclick="redirectToProduct('p-15-1.jpg', 'Happy Mother\'s Day Designs Tee For Women', '₱173.00', 
-          'Celebrate the love and warmth of motherhood with our Happy Mother\'s Day Designs Tee for Women. This special tee showcases heartfelt designs dedicated to honoring mothers. Made with care and comfort in mind, it offers a soft and flattering fit. Whether it\'s for Mother\'s Day or any day, express your appreciation with our Happy Mother\'s Day Designs Tee for Women and make a meaningful gesture of love.');">
-          <div class="des">
-            <h5>Happy Mother's Day Designs Tee For Women</h5>
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star-half-alt"></i>
-            </div>
-            <h4>₱173.00<span> &nbsp;₱346.00</span></h4>
-            <button class="buy-btn" onclick="redirectToProduct('p-15-1.jpg', 'Happy Mother\'s Day Designs Tee For Women', '₱173.00', 
-            'Celebrate the love and warmth of motherhood with our Happy Mother\'s Day Designs Tee for Women. This special tee showcases heartfelt designs dedicated to honoring mothers. Made with care and comfort in mind, it offers a soft and flattering fit. Whether it\'s for Mother\'s Day or any day, express your appreciation with our Happy Mother\'s Day Designs Tee for Women and make a meaningful gesture of love.');">BUY NOW</button>
-          </div>
-        </div>
-
-        <div class="pro">
-            <img src="images/products/p-16-1.jpg" alt="" onclick="redirectToProduct('p-16-1.jpg', 'Unisex Plain Tee Vibes Shirt', '₱149.00', 
-            'Discover the Unisex Plain Tee Vibes Shirt, the ultimate combination of style and simplicity. Crafted with high-quality materials, this versatile tee provides exceptional comfort and durability. Its minimalist design makes it a wardrobe staple for both men and women, effortlessly complementing any outfit. Elevate your casual look with the Unisex Plain Tee Vibes Shirt and embrace the essence of timeless fashion.');">
-            <div class="des">
-              <h5>Unisex Plain Tee Vibes Shirt</h5>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h4>₱149.00</h4>
-              <button class="buy-btn" onclick="redirectToProduct('p-16-1.jpg', 'Unisex Plain Tee Vibes Shirt', '₱149.00', 
-              'Discover the Unisex Plain Tee Vibes Shirt, the ultimate combination of style and simplicity. Crafted with high-quality materials, this versatile tee provides exceptional comfort and durability. Its minimalist design makes it a wardrobe staple for both men and women, effortlessly complementing any outfit. Elevate your casual look with the Unisex Plain Tee Vibes Shirt and embrace the essence of timeless fashion.');">BUY NOW</button>
-            </div>
-          </div>
-
-          <div class="pro">
-            <img src="images/products/p-17-1.jpg" alt="" onclick="redirectToProduct('p-17-1.jpg', 'Semi Grunge Sport\'s T-Shirts for Men', '₱500.00', 
-            'Behold the Men\'s Semi Grunge Sport\'s T-Shirt, where style meets performance in perfect harmony. Constructed with breathable fabric and adorned with a distinctive semi-grunge design, this shirt keeps you cool while adding a rebellious touch to your sportswear. Prepare to elevate your fashion game and unleash your inner renegade with this exceptional piece.');">
-            <div class="des">
-              <h5>Semi Grunge Sport's T-Shirts for Men</h5>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h4>₱500.00</h4>
-              <button class="buy-btn" onclick="redirectToProduct('p-17-1.jpg', 'Semi Grunge Sport\'s T-Shirts for Men', '₱500.00', 
-              'Behold the Men\'s Semi Grunge Sport\'s T-Shirt, where style meets performance in perfect harmony. Constructed with breathable fabric and adorned with a distinctive semi-grunge design, this shirt keeps you cool while adding a rebellious touch to your sportswear. Prepare to elevate your fashion game and unleash your inner renegade with this exceptional piece.');">BUY NOW</button>
-            </div>
-          </div>
-
-          <div class="pro">
-            <img src="images/products/p-18-1.jpg" alt="" onclick="redirectToProduct('p-18-1.jpg', 'Men\'s Textured Short Sleeve Polo Shirt', '₱325.00', 
-            'Presenting the SweatyRocks Women\'s Half Sleeve Low Casual T-Shirt, a versatile blend of comfort and style. Designed with half sleeves and a low-cut neckline, this casual tee offers a laid-back and fashionable look. Crafted with quality materials, it ensures a comfortable fit for all-day wear. Elevate your casual wardrobe with the SweatyRocks Women\'s Half Sleeve Low Casual T-Shirt and embrace effortless style.');">
-            <div class="des">
-              <h5>SweatyRocks Women's Half Sleeve Low Casual T-Shirt</h5>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h4>₱325.00</h4>
-              <button class="buy-btn" onclick="redirectToProduct('p-18-1.jpg', 'Men\'s Textured Short Sleeve Polo Shirt', '₱325.00', 
-              'Presenting the SweatyRocks Women\'s Half Sleeve Low Casual T-Shirt, a versatile blend of comfort and style. Designed with half sleeves and a low-cut neckline, this casual tee offers a laid-back and fashionable look. Crafted with quality materials, it ensures a comfortable fit for all-day wear. Elevate your casual wardrobe with the SweatyRocks Women\'s Half Sleeve Low Casual T-Shirt and embrace effortless style.');">BUY NOW</button>
-            </div>
-          </div>
-
-          <div class="pro">
-            <img src="images/products/p-19-1.jpg" alt="" onclick="redirectToProduct('p-19-1.jpg', 'Role - League of Legends Inspired Unisex T-Shirt', '₱449.00', 
-            'Introducing our Player Role Unisex T-Shirt, inspired by League of Legends. This tee features iconic role designations including Jungle, Support, ADC, and Top. Crafted with premium materials, it offers a comfortable and stylish fit for all genders. Show off your love for the game with the Player Role Unisex T-Shirt and represent your favorite role in League of Legends with pride.');">
-            <div class="des">
-              <h5>Role - League of Legends Inspired Unisex T-Shirt</h5>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <h4>₱449.00</h4>
-              <button class="buy-btn" onclick="redirectToProduct('p-19-1.jpg', 'Role - League of Legends Inspired Unisex T-Shirt', '₱449.00', 
-              'Introducing our Player Role Unisex T-Shirt, inspired by League of Legends. This tee features iconic role designations including Jungle, Support, ADC, and Top. Crafted with premium materials, it offers a comfortable and stylish fit for all genders. Show off your love for the game with the Player Role Unisex T-Shirt and represent your favorite role in League of Legends with pride.');">BUY NOW</button>
-            </div>
-          </div>
-
-          <div class="pro">
-            <img src="images/products/p-20-1.jpg" alt="" onclick="redirectToProduct('p-20-1.jpg', 'Men\'s Textured Short Sleeve Polo Shirt', '₱419.99', 
-            'Introducing our Men\'s Textured Short Sleeve Polo Shirt, a perfect blend of style and comfort. Crafted with attention to detail, this polo shirt features a textured fabric that adds a touch of sophistication to your look. With its short sleeves and classic polo collar, it offers a versatile and timeless appeal. Whether you\'re dressing up or down, this shirt is a must-have addition to your wardrobe. Elevate your style with the Men\'s Textured Short Sleeve Polo Shirt and experience the perfect combination of fashion and comfort.');">
-            <div class="des">
-              <h5>Men's Textured Short Sleeve Polo Shirt</h5>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-              </div>
-              <h4>219.99<span> &nbsp;₱419.99</span></h4>
-              <button class="buy-btn" onclick="redirectToProduct('p-20-1.jpg', 'Men\'s Textured Short Sleeve Polo Shirt', '₱419.99', 
-              'Introducing our Men\'s Textured Short Sleeve Polo Shirt, a perfect blend of style and comfort. Crafted with attention to detail, this polo shirt features a textured fabric that adds a touch of sophistication to your look. With its short sleeves and classic polo collar, it offers a versatile and timeless appeal. Whether you\'re dressing up or down, this shirt is a must-have addition to your wardrobe. Elevate your style with the Men\'s Textured Short Sleeve Polo Shirt and experience the perfect combination of fashion and comfort.');">BUY NOW</button>
-            </div>
-          </div>
+        <input type="number" id="quantityInput" value="1">
       </div>
-    </section>
-    
-    <!-- Next Page -->
-    <section id="pagination" class="section-p1">
-      <a href="apparel.html">1</a>
-      <a href="apparel2.html">2</a>
-      <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
-    </section>
-    <!-- ***** Body Section End ***** -->
-    
-    
-    <!-- ***** Footer Section Start ***** -->
-    <section class="footer">
-      <div class="container">
-        <div class="footer-box">
-          <h3>About Us</h3>
-          <p><strong>Hours:</strong> 10:00 AM - 6:00 PM , Mon - Sat</p>
-          <p><a href="FAQ.html">FAQ</a></p>
-          <p>Copyrights &copy; 2023 All rights reserved By BSCS-2A</p>
-        </div>
-        
-        <div class="footer-box">
-          <h3>Newsletter</h3>
-          <p>Stay updated with us</p>
-          <form>
-            <input type="email" name="email" placeholder="@gmail.com" autocomplete="email">
-            <button type="submit"><i class="fa-solid fa-right-long"></i></button>
-          </form>
-        </div>
-        
-        <div class="footer-box">
-          <h3>Contact Us</h3>
-          <p><strong>Address: </strong> Pasig City, Philippines</p>
-          <p><strong>Phone:</strong> (02) 7933 2457 / (+63) 917 758 9353</p>
-          <p><strong>Email:</strong> teevibes@gmail.com</p>
-          <p>Connect With Us On:</p>
-          <div>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-        </div>
+      
+      <h3>Product Description</h3>
+      <!-- Product description -->
+      <p></p>
+      
+      <div class="product-detail">
+        <ul>
+          <li>Available: <span>in stock</span></li>
+          <li>Originality: <span>100% Authentic</span></li>
+          <li>Shipping Area: <span>All over the world</span></li>
+          <li>Shipping Fee: <span>₱80.00 for ₱0.00 Spend || ₱50.00 for ₱500.00 Spend || Free for ₱1,000.00 Spend</span></li>
+        </ul>
+        <button id="addToCartButton" class="normal">Add To Cart</button>
       </div>
-    </section>
-    <!-- ***** Footer Section End ***** -->
+    </div>
+  </section>
+  <!-- ***** Body Section End ***** -->
+  
+  
+  <!-- ***** Footer Section Start ***** -->
+  <section class="footer">
+    <div class="container">
+      <div class="footer-box">
+        <h3>About Us</h3>
+        <p><strong>Hours:</strong> 10:00 AM - 6:00 PM , Mon - Sat</p>
+        <p><a href="FAQ.html">FAQ</a></p>
+        <p>Copyrights &copy; 2023 All rights reserved By BSCS-2A</p>
+      </div>
+      
+      <div class="footer-box">
+        <h3>Newsletter</h3>
+        <p>Stay updated with us</p>
+        <form>
+          <input type="email" name="email" placeholder="@gmail.com" autocomplete="email">
+          <button type="submit"><i class="fa-solid fa-right-long"></i></button>
+        </form>
+      </div>
+      
+      <div class="footer-box">
+        <h3>Contact Us</h3>
+        <p><strong>Address: </strong> Pasig City, Philippines</p>
+        <p><strong>Phone:</strong> (02) 7933 2457 / (+63) 917 758 9353</p>
+        <p><strong>Email:</strong> teevibes@gmail.com</p>
+        <p>Connect With Us On:</p>
+        <div>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- ***** Footer Section End ***** -->
+  
+  
+  <script>
+    //   Product Details
+    var MainImg = document.getElementById("MainImg");
+    var smallimg = document.getElementsByClassName("small-img");
     
+    var smallImageUrls = {
+      "p-1-1.jpg": {
+        "first": "images/products/p-1-1.jpg",
+        "second": "images/products/p-1-2.jpg",
+        "third": "images/products/p-1-3.jpg",
+        "fourth": "images/products/p-1-4.jpg"
+      },
+      "p-2-1.jpg": {
+        "first": "images/products/p-2-1.jpg",
+        "second": "images/products/p-2-2.jpg",
+        "third": "images/products/p-2-3.jpg",
+        "fourth": "images/products/p-2-4.jpg"
+      },
+      "p-3-1.jpg": {
+        "first": "images/products/p-3-1.jpg",
+        "second": "images/products/p-3-2.jpg",
+        "third": "images/products/p-3-3.jpg",
+        "fourth": "images/products/p-3-4.jpg"
+      },
+      "p-4-1.jpg": {
+        "first": "images/products/p-4-1.jpg",
+        "second": "images/products/p-4-2.jpg",
+        "third": "images/products/p-4-3.jpg",
+        "fourth": "images/products/p-4-4.jpg"
+      },
+      "p-5-1.jpg": {
+        "first": "images/products/p-5-1.jpg",
+        "second": "images/products/p-5-2.jpg",
+        "third": "images/products/p-5-3.jpg",
+        "fourth": "images/products/p-5-4.jpg"
+      },
+      "p-6-1.jpg": {
+        "first": "images/products/p-6-1.jpg",
+        "second": "images/products/p-6-2.jpg",
+        "third": "images/products/p-6-3.jpg",
+        "fourth": "images/products/p-6-4.jpg"
+      },
+      "p-7-1.jpg": {
+        "first": "images/products/p-7-1.jpg",
+        "second": "images/products/p-7-2.jpg",
+        "third": "images/products/p-7-3.jpg",
+        "fourth": "images/products/p-7-4.jpg"
+      },
+      "p-8-1.jpg": {
+        "first": "images/products/p-8-1.jpg",
+        "second": "images/products/p-8-2.jpg",
+        "third": "images/products/p-8-3.jpg",
+        "fourth": "images/products/p-8-4.jpg"
+      },
+      "p-9-1.jpg": {
+        "first": "images/products/p-9-1.jpg",
+        "second": "images/products/p-9-2.jpg",
+        "third": "images/products/p-9-3.jpg"
+      },
+      "p-10-1.jpg": {
+        "first": "images/products/p-10-1.jpg",
+      },
+      "p-11-1.jpg": {
+        "first": "images/products/p-11-1.jpg",
+        "second": "images/products/p-11-2.jpg",
+        "third": "images/products/p-11-3.jpg",
+        "fourths": "images/products/p-11-4.jpg"
+      },
+      "p-12-1.jpg": {
+        "first": "images/products/p-12-1.jpg",
+        "second": "images/products/p-12-2.jpg",
+        "third": "images/products/p-12-3.jpg"
+      },
+      "p-13-1.jpg": {
+        "first": "images/products/p-13-1.jpg",
+        "second": "images/products/p-13-2.jpg",
+        "third": "images/products/p-13-3.jpg",
+        "fourth": "images/products/p-13-4.jpg"
+      },
+      "p-14-1.jpg": {
+        "first": "images/products/p-14-1.jpg",
+        "second": "images/products/p-14-2.jpg",
+        "third": "images/products/p-14-3.jpg",
+        "fourth": "images/products/p-14-4.jpg"
+      },
+      "p-15-1.jpg": {
+        "first": "images/products/p-15-1.jpg",
+        "second": "images/products/p-15-2.jpg",
+        "third": "images/products/p-15-3.jpg",
+        "fourth": "images/products/p-15-4.jpg"
+      },
+      "p-16-1.jpg": {
+        "first": "images/products/p-16-1.jpg",
+        "second": "images/products/p-16-2.jpg",
+        "third": "images/products/p-16-3.jpg",
+        "fourth": "images/products/p-16-4.jpg"
+      },
+      "p-17-1.jpg": {
+        "first": "images/products/p-17-1.jpg",
+        "second": "images/products/p-17-2.jpg",
+        "third": "images/products/p-17-3.jpg"
+      },
+      "p-18-1.jpg": {
+        "first": "images/products/p-18-1.jpg",
+        "second": "images/products/p-18-2.jpg",
+        "third": "images/products/p-18-3.jpg",
+        "fourth": "images/products/p-18-4.jpg"
+      },
+      "p-19-1.jpg": {
+        "first": "images/products/p-19-1.jpg",
+        "second": "images/products/p-19-2.jpg",
+        "third": "images/products/p-19-3.jpg",
+        "fourth": "images/products/p-19-4.jpg"
+      },
+      "p-20-1.jpg": {
+        "first": "images/products/p-20-1.jpg",
+        "second": "images/products/p-20-2.jpg",
+        "third": "images/products/p-20-3.jpg",
+        "fourth": "images/products/p-20-4.jpg"
+      },
+    };
     
-    <script>
-      // Apparel Product Details
-      function redirectToProduct(imageName, productName, productPrice, productDescription) {
-        var encodedName = encodeURIComponent(productName);
-        var encodedPrice = encodeURIComponent(productPrice);
-        var encodedDescription = encodeURIComponent(productDescription);
-        var url = 'productdetails.html?img=' + imageName + '&name=' + encodeURIComponent(productName) + '&price=' + encodeURIComponent(productPrice) + '&description=' + encodeURIComponent(productDescription);
-        window.location.href = url;
+    var urlParams = new URLSearchParams(window.location.search);
+    var imgParam = urlParams.get('img');
+    var nameParam = decodeURIComponent(urlParams.get('name'));
+    var priceParam = decodeURIComponent(urlParams.get('price'));
+    var descriptionParam = decodeURIComponent(urlParams.get('description'));
+    
+    document.querySelector("#MainImg").src = "images/products/" + imgParam;
+    document.querySelector("#prodetails h2").textContent = nameParam;
+    document.querySelector("#prodetails h4").textContent = priceParam;
+    document.querySelector("#prodetails p").textContent = descriptionParam;
+    
+    var productName = imgParam.replace(".jpg", "");
+    
+    // Updating small images based on product name
+    for (var i = 0; i < smallimg.length; i++) {
+      var smallImgUrls = smallImageUrls[productName + ".jpg"];
+      var smallImgUrl = smallImgUrls[Object.keys(smallImgUrls)[i]];
+      smallimg[i].src = smallImgUrl;
+      smallimg[i].setAttribute("data-img", smallImgUrl); 
+    }
+    
+    for (var i = 0; i < smallimg.length; i++) {
+      smallimg[i].onclick = function() {
+        MainImg.src = this.getAttribute("data-img"); 
       }
-    </script>
+    }
     
-    <script src="js/script.js"></script> 
-  </body>
-  </html>
+    // Add to cart in product details
+    function addToCart() {
+      var addToCartButton = document.getElementById("addToCartButton");
+      var quantityInput = document.querySelector("#quantityInput");
+      var sizeSelect = document.getElementById("size");
+      var productPrice = parseFloat(document.querySelector("#prodetails h4").textContent.replace(/,/g, "").replace("₱", ""));
+      
+      addToCartButton.addEventListener("click", function() {
+        var productName = document.querySelector("#prodetails h2").textContent;
+        var productImageSrc = document.querySelector("#MainImg").src;
+        var quantity = parseInt(quantityInput.value);
+        var selectedSize = sizeSelect.value;
+        
+        if (selectedSize === "Select Size") {
+          alert("Please choose a size first.");
+          return; 
+        }
+        
+        var cartItem = {
+          name: productName,
+          price: productPrice,
+          quantity: quantity,
+          size: selectedSize,
+          image: productImageSrc
+        };
+        
+        
+        var existingCartItems = localStorage.getItem("cartItems");
+        var cartItems = existingCartItems ? JSON.parse(existingCartItems) : [];
+        cartItems.push(cartItem);
+        localStorage.setItem("cartItems", JSON.stringify(cartItems));
+        
+        alert("The product has been added to the cart.");
+        updateCartTotals(); 
+      });
+      
+      quantityInput.addEventListener("input", function() {
+        var quantity = parseInt(quantityInput.value);
+        var subtotal = quantity * productPrice;
+        document.querySelector("#subtotal").textContent = "₱" + subtotal.toFixed(2);
+      });
+      
+      quantityInput.addEventListener("change", function() {
+        var quantity = parseInt(quantityInput.value);
+        
+        console.log("Updated quantity:", quantity);
+      });
+    }
+    
+    addToCart();
+  </script>
+  
+  <script src="js/script.js"></script>
+</body>
+</html>

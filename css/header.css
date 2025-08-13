@@ -135,7 +135,6 @@ Header Navigation Style
   transform: rotate(45deg) translate(-0.5rem, -0.6rem);
 }
 
-/* Hide menu trigger on desktop */
 .menu-trigger {
   display: none;
 }

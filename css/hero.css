@@ -6,10 +6,10 @@ Hero Image Slider
 
 .slider {
   position: relative;
-  width: calc(100% + 4rem); /* Compensate for body margins */
+  width: calc(100% + 4rem);
   height: clamp(40rem, 60vw, 75rem);
   overflow: hidden;
-  margin-left: -2rem; /* Override global margins */
+  margin-left: -2rem; 
   margin-right: -2rem;
 }
 
@@ -170,7 +170,7 @@ Hero Image Slider
   animation: fade 1.5s ease-in-out;
 }
 
-/* Mobile optimizations */
+/* Responsiveness*/
 @media (max-width: 768px) {
   .slider {
     height: clamp(30rem, 50vw, 40rem);
@@ -232,7 +232,6 @@ Hero Image Slider
   }
 }
 
-/* Tablet adjustments */
 @media (min-width: 769px) and (max-width: 1024px) {
   .txt {
     left: 3%;
@@ -240,7 +239,6 @@ Hero Image Slider
   }
 }
 
-/* Large screen adjustments */
 @media (min-width: 1200px) {
   .txt {
     left: 8%;

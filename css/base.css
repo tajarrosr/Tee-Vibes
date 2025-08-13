@@ -29,25 +29,22 @@ body {
   background: #f0f3fa;
   font-size: 1.6rem;
   line-height: 1.6;
-  margin: 0 2rem; /* Add global left and right margins */
+  margin: 0 2rem; 
 }
 
-/* Footer full width override */
 .footer {
   margin-left: -2rem !important;
   margin-right: -2rem !important;
 }
 
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-/* Section padding with better left/right spacing */
 section {
-  padding: 2rem 2rem; /* Changed from 2rem 5% to fixed padding */
+  padding: 2rem 2rem; 
 }
 
 /* Typography */
@@ -119,7 +116,6 @@ img {
   object-fit: cover;
 }
 
-/* Utility Classes */
 .text-center {
   text-align: center;
 }
@@ -156,7 +152,7 @@ img {
 /* Responsive margin adjustments */
 @media (min-width: 576px) {
   body {
-    margin: 0 3rem; /* Increased margins for larger screens */
+    margin: 0 3rem; 
   }
 
   .footer {
@@ -179,7 +175,7 @@ img {
   }
 
   body {
-    margin: 0 4rem; /* More margin for tablets */
+    margin: 0 4rem; 
   }
 
   .footer {
@@ -202,7 +198,7 @@ img {
   }
 
   body {
-    margin: 0 5rem; /* Even more margin for desktop */
+    margin: 0 5rem; 
   }
 
   .footer {
@@ -221,7 +217,7 @@ img {
   }
 
   body {
-    margin: 0 6rem; /* Maximum margin for large screens */
+    margin: 0 6rem; 
   }
 
   .footer {
@@ -245,7 +241,7 @@ img {
   }
 
   body {
-    margin: 0 8rem; /* Extra margin for ultra-wide screens */
+    margin: 0 8rem; 
   }
 
   .footer {

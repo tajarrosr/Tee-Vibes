@@ -221,7 +221,6 @@ Reusable Components
   font-weight: bold;
 }
 
-/* Cards Grid */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
@@ -256,7 +255,7 @@ Reusable Components
   text-align: left;
 }
 
-/* Responsive adjustments */
+/* Responsiveness */
 @media (max-width: 768px) {
   .about .container_about {
     margin-top: 3rem;

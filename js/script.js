@@ -43,19 +43,16 @@ function optimizeImages() {
   const images = document.querySelectorAll("img")
 
   images.forEach((img) => {
-    // Add loading="lazy" for better performance
     if (!img.hasAttribute("loading")) {
       img.setAttribute("loading", "lazy")
     }
 
-    // Handle image load errors
     img.addEventListener("error", function () {
       this.style.display = "none"
     })
   })
 }
 
-// Initialize on DOM load
 document.addEventListener("DOMContentLoaded", () => {
   optimizeImages()
 })

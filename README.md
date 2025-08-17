@@ -1,4 +1,4 @@
-# 🛒 E-commerce Website (Responsive & Frontend Only) !
+# 🛒 E-commerce Website (Responsive & Frontend Only)
 
 ## 📖 Project Overview
 This is a **simple e-commerce website** built using **HTML**, **CSS**, and **Vanilla JavaScript**. It was created as a **final project** for our **Web Development Programming** subject in **2nd year, 2nd semester**. The primary focus of the project is on **frontend development**, with **no backend functionality**.
